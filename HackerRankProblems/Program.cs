@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PointsInTriangle.Solve();
         }
     }
 }
