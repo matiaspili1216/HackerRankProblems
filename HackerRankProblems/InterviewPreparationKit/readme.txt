@@ -1,8 +1,8 @@
 ﻿The HackerRank Interview Preparation Kit
 
 69 Challenges:
- - 4 of Warm-up Challenges
- - 5 of Arrays
+ - 4 of Warm-up Challenges (4 solved)
+ - 5 of Arrays (2 solved)
  - 5 of Dictionaries and Hashmaps
  - 5 of Sorting
  - 5 of String Manipulation
