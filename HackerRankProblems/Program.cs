@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            PointsInTriangle.Solve();
+            InterviewPreparationKit._01.WarmUpChallenges.SolutionRepeatedString.GetSolution();
         }
     }
 }
