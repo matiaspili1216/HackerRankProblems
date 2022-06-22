@@ -38,7 +38,7 @@ namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
 
     class SolutionCountingValleys
     {
-        public static void Main(string[] args)
+        public static void GetSolution()
         {
             TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 

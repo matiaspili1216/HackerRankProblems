@@ -53,7 +53,7 @@ namespace HackerRankProblems
 
     class Solution_2DArrayDS
     {
-        public static void Main(string[] args)
+        public static void GetSolution()
         {
             TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
