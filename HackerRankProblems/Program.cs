@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            InterviewPreparationKit._01.WarmUpChallenges.SolutionRepeatedString.GetSolution();
+            HackerRankProblems.Problem_Solving.Algorithms.Implementation.CavityMapSolution.Solve();
         }
     }
 }
