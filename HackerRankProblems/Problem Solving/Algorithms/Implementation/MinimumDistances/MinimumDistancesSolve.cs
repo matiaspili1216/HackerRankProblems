@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
+namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.MinimumDistances
 {
-    class ResultMinimumDistances
+    public class MinimumDistancesSolve
     {
         /*
          * Complete the 'minimumDistances' function below.
@@ -52,17 +50,4 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
         }
     }
 
-    public class SolutionMinimumDistances
-    {
-        public static void Solve()
-        {
-        //    int n = Convert.ToInt32(Console.ReadLine().Trim());
-
-            List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
-
-            int result = ResultMinimumDistances.MinimumDistances(a);
-
-            Console.WriteLine(result);
-        }
-    }
 }

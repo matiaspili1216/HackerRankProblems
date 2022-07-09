@@ -1,13 +1,14 @@
-﻿using System;
+﻿using HackerRankProblems.Problem_Solving.Algorithms.Implementation.CavityMap.DTO;
+
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
+namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.CavityMap
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/cavity-map/problem
     /// </summary>
-    public class CavityMapResult
+    public class CavityMapSolve
     {
         /*
          * Complete the 'cavityMap' function below.
@@ -84,67 +85,4 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
         }
     }
 
-    public class Row
-    {
-        public int IRow { get; }
-        public List<Cell> Cells { get; }
-
-        public string FinValues => string.Join("", Cells.Select(c => c.FinValue));
-
-        public Row(int iRow, List<Cell> cells)
-        {
-            IRow = iRow;
-            Cells = cells;
-        }
-    }
-
-    public class Cell
-    {
-        public int Row { get; }
-        public int Column { get; }
-        public int Value { get; }
-        public bool IsBorder { get; }
-
-        public string FinValue { get; set; }
-
-        public Cell(int row, int column, int value, bool isBorder)
-        {
-            Row = row;
-            Column = column;
-            Value = value;
-            IsBorder = isBorder;
-        }
-    }
-
-
-
-    public class CavityMapSolution
-    {
-        public static void Solve()
-        {
-            //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-            int n = Convert.ToInt32(Console.ReadLine().Trim());
-
-            List<string> grid = new List<string>();
-
-            for (int i = 0; i < n; i++)
-            {
-                string gridItem = Console.ReadLine();
-                grid.Add(gridItem);
-            }
-
-            List<string> result = CavityMapResult.CavityMap(grid);
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-
-            Console.WriteLine(String.Join("\n", result));
-            Console.ReadLine();
-            //textWriter.Flush();
-            //textWriter.Close();
-        }
-    }
 }

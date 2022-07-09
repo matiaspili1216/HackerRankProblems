@@ -1,12 +1,9 @@
-﻿using System;
-using System.IO;
-
-namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
+﻿namespace HackerRankProblems.InterviewPreparationKit.WarmUpChallenges.CountingValleys
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/counting-valleys/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
     /// </summary>
-    public class CountingValleys
+    public class CountingValleysSolve
     {
         /*
          * Complete the 'countingValleys' function below.
@@ -33,25 +30,6 @@ namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
             }
 
             return result;
-        }
-    }
-
-    class SolutionCountingValleys
-    {
-        public static void GetSolution()
-        {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-            int steps = Convert.ToInt32(Console.ReadLine().Trim());
-
-            string path = Console.ReadLine();
-
-            int result = CountingValleys.GetCountingValleys(steps, path);
-
-            textWriter.WriteLine(result);
-
-            textWriter.Flush();
-            textWriter.Close();
         }
     }
 }

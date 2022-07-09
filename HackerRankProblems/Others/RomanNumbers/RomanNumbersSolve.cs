@@ -2,23 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HackerRankProblems
+namespace HackerRankProblems.Others.RomanNumbers
 {
-    public class RomanNumbers
+    public class RomanNumbersSolve
     {
-        public static void Solve()
-        {
-            Console.Write("Enter list of names with roman number (Ej. 'Luis XI') to sort (without spaces and separate by commas): ");
-
-            string values = Console.ReadLine();
-
-            List<string> names = values.Split(',').ToList();
-
-            Console.Write($"Res = {string.Join(", ", SortByNamesAndRoman(names))}");
-
-            Console.ReadLine();
-        }
-
         /// <summary>
         /// Sort list of names with roman number (Ej. 'Luis XI') by names and roman number
         /// </summary>

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 /// <summary>
 /// https://www.hackerrank.com/challenges/repeated-string/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 /// </summary>
-namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
+namespace HackerRankProblems.InterviewPreparationKit.WarmUpChallenges.RepeatedString
 {
-    public class RepeatedString
+    public class RepeatedStringSolve
     {
         /*
          * Complete the 'repeatedString' function below.
@@ -35,28 +30,6 @@ namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
             }
 
             return result;
-        }
-    }
-
-    class SolutionRepeatedString
-    {
-        public static void GetSolution()
-        {
-            //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-            string s = Console.ReadLine();
-
-            long n = Convert.ToInt64(Console.ReadLine().Trim());
-
-            long result = RepeatedString.GetRepeatedString(s, n);
-
-            Console.WriteLine(result);
-            Console.ReadLine();
-
-            //textWriter.WriteLine(result);
-            //
-            //textWriter.Flush();
-            //textWriter.Close();
         }
     }
 }

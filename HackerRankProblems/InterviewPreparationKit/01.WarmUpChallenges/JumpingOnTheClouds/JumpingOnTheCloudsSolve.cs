@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
+namespace HackerRankProblems.InterviewPreparationKit.WarmUpChallenges.JumpingOnTheClouds
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
     /// </summary>
-    public class JumpingOnTheClouds
+    public class JumpingOnTheCloudsSolve
     {
         public static int GetJumpingOnClouds(List<int> c)
         {
@@ -43,25 +38,5 @@ namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
 
             return result;
         }
-    }
-
-    class SolutionJumpingOnTheClouds
-    {
-        public static void GetSolution()
-        {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-            int n = Convert.ToInt32(Console.ReadLine().Trim());
-
-            List<int> c = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(cTemp => Convert.ToInt32(cTemp)).ToList();
-
-            int result = JumpingOnTheClouds.GetJumpingOnClouds(c);
-
-            textWriter.WriteLine(result);
-
-            textWriter.Flush();
-            textWriter.Close();
-        }
-
     }
 }

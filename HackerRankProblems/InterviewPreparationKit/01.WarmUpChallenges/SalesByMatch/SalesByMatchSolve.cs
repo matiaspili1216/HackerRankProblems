@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
+namespace HackerRankProblems.InterviewPreparationKit.WarmUpChallenges.SalesByMatch
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
     /// </summary>
-    public class SalesByMatch
+    public class SalesByMatchSolve
     {
         /*
          * Complete the 'sockMerchant' function below.
@@ -32,25 +28,6 @@ namespace HackerRankProblems.InterviewPreparationKit._01.WarmUpChallenges
                 result += (len % 2 == 0) ? len / 2 : (len - 1) / 2;
             }
             return result;
-        }
-    }
-
-    public class SolutionSalesByMatch
-    {
-        public static void GetSolution()
-        {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-            int n = Convert.ToInt32(Console.ReadLine().Trim());
-
-            List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
-
-            int result = SalesByMatch.SockMerchant(n, ar);
-
-            textWriter.WriteLine(result);
-
-            textWriter.Flush();
-            textWriter.Close();
         }
     }
 }

@@ -1,58 +1,10 @@
 ﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Numerics;
 
-namespace HackerRankProblems
+namespace HackerRankProblems.Others.PointsInTriangle
 {
-    public static class PointsInTriangle
+    public class PointsInTriangleSolve
     {
-        /*
-         Improvement points:
-            * Add validations when getting points values
-         */
-
-        public static void Solve()
-        {
-            Console.WriteLine("Enter value X and Y of Points (without spaces and separate by commas): three point of triangle and one to calculate");
-            
-            Console.WriteLine("Point A of triangle:");
-            string valuesOfA = Console.ReadLine();
-            var pointOfA = valuesOfA.Split(',').Select(x => int.Parse(x));
-            Point a = new Point(pointOfA.ElementAt(0), pointOfA.ElementAt(1));
-
-            Console.WriteLine("Point B of triangle:");
-            string valuesOfB = Console.ReadLine();
-            var pointOfB = valuesOfB.Split(',').Select(x => int.Parse(x));
-            Point b = new Point(pointOfB.ElementAt(0), pointOfB.ElementAt(1));
-
-            Console.WriteLine("Point C of triangle:");
-            string valuesOfC = Console.ReadLine();
-            var pointOfC = valuesOfC.Split(',').Select(x => int.Parse(x));
-            Point c = new Point(pointOfC.ElementAt(0), pointOfC.ElementAt(1));
-
-            if (!IsNonDegenerate(a, b, c)) { Console.WriteLine("This triangle is Degenerate"); }
-            else
-            {
-                Console.WriteLine("Point P to calculate:");
-                string valuesOfP = Console.ReadLine();
-                var pointOfP = valuesOfP.Split(',').Select(x => int.Parse(x));
-                Point p = new Point(pointOfP.ElementAt(0), pointOfP.ElementAt(1));
-            
-                if (PointBelongTriangle(a, b, c, p))
-                {
-                    Console.WriteLine("This Point belong of triangle");
-                }
-                else
-                {
-                    Console.WriteLine("This Point not belong of triangle");
-                }
-            }
-
-            Console.ReadLine();
-        }
-
-
         //Fuente: https://www.iteramos.com/pregunta/10693/como-determinar-un-punto-en-un-triangulo
 
         /// <summary>
@@ -63,7 +15,7 @@ namespace HackerRankProblems
         /// <param name="c">Point c of triangle</param>
         /// <param name="p">Extra point to calc</param>
         /// <returns>true is extra point is into the triangle</returns>
-        private static bool PointBelongTriangle(Point a, Point b, Point c, Point p)
+        public bool PointBelongTriangle(Point a, Point b, Point c, Point p)
         {
             bool b1 = Sign(a, b, p) < 0.0f; 
             bool b2 = Sign(b, c, p) < 0.0f; 
@@ -84,7 +36,7 @@ namespace HackerRankProblems
         /// <param name="min">Minimum value</param>
         /// <param name="max">Maximum value</param>
         /// <returns>true if value is between a minimum and a maximum</returns>
-        private static bool Between(int v, int min, int max) => min <= v && max >= v;
+        private bool Between(int v, int min, int max) => min <= v && max >= v;
 
         /// <summary>
         /// If ab, bc, and ca are the lengths of the three sides of a triangle, then
@@ -100,7 +52,7 @@ namespace HackerRankProblems
         /// <param name="b">Point b of triangle</param>
         /// <param name="c">Point c of triangle</param>
         /// <returns>true if is a Non Degenerate triangle</returns>
-        private static bool IsNonDegenerate(Point a, Point b, Point c)
+        public bool IsNonDegenerate(Point a, Point b, Point c)
         {
             var lenAB = LengthSide(a, b);
             var lenBC = LengthSide(b, c);

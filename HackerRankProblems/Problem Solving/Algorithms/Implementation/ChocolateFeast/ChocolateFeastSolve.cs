@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
+namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.ChocolateFeast
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/chocolate-feast/problem
     /// </summary>
-    public static class ChocolateFeastResult
+    public static class ChocolateFeastSolve
     {
         /*
          * Complete the 'chocolateFeast' function below.
@@ -58,7 +54,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
 
                 int m = Convert.ToInt32(firstMultipleInput[2]);
 
-                int result = ChocolateFeastResult.ChocolateFeast(n, c, m);
+                int result = ChocolateFeastSolve.ChocolateFeast(n, c, m);
 
                 Console.WriteLine(result);
             }

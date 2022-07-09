@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
+﻿namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.TheTimeInWords
 {
     /// <summary>
     /// https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true&utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
     /// </summary>
-    public class TheTimeInWordsResult
+    public class TheTimeInWordsSolve
     {
         private static string NumberToText(int m)
         {
@@ -73,22 +67,6 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation
             {
                 return $"{NumberToText(mm)} minutes {pastTo} {NumberToText(hh)}";
             }
-        }
-
-    }
-
-    public class TheTimeInWordsSolution
-    {
-        public static void Solve()
-        {
-            int h = Convert.ToInt32(Console.ReadLine().Trim());
-
-            int m = Convert.ToInt32(Console.ReadLine().Trim());
-
-            string result = TheTimeInWordsResult.TimeInWords(h, m);
-
-            Console.WriteLine(result);
-            Console.ReadLine();
         }
 
     }

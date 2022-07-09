@@ -1,24 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace HackerRankProblems
+namespace HackerRankProblems.Others.BinaryCardinality
 {
-    public class BinaryCardinality
+    public class BinaryCardinalitySolve
     {
-        public static void Solve()
-        {
-            Console.Write("Enter the number to convert (without spaces and separate by commas): ");
-
-            string values = Console.ReadLine();
-
-            List<int> nums = values.Split(',').Select(x => int.Parse(x)).ToList();
-
-            Console.Write($"Res = {string.Join(", ", SortByCardinality(nums))}");
-
-            Console.ReadLine();
-        }
-
         /// <summary>
         /// Sort a list of decimal number by Binary Cardinality
         /// </summary>
