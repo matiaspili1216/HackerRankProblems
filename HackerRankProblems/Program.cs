@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            HackerRankProblems.Problem_Solving.Algorithms.Implementation.CavityMapSolution.Solve();
+            Problem_Solving.Algorithms.Warmup.PlusMinus.PlusMinusPrepare.Call();
         }
     }
 }
