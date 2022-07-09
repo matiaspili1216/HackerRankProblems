@@ -5,7 +5,7 @@
     /// </summary>
     public class SolveMeFirstSolve
     {
-        static int Solve(int a, int b)
+        public static int Solve(int a, int b)
         {
             // Hint: Type return a+b; below  
             return a + b;

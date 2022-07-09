@@ -7,9 +7,12 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Warmup.SolveMeFirst
     /// </summary>
     public class SolveMeFirstPrepare
     {
-        int val1 = Convert.ToInt32(Console.ReadLine());
-        int val2 = Convert.ToInt32(Console.ReadLine());
-        int sum = SolveMeFirst.Solve(val1, val2);
-        Console.WriteLine(sum);
+        public static void Call()
+        {
+            int val1 = Convert.ToInt32(Console.ReadLine());
+            int val2 = Convert.ToInt32(Console.ReadLine());
+            int sum = SolveMeFirstSolve.Solve(val1, val2);
+            Console.WriteLine(sum);
+        }
     }
 }
