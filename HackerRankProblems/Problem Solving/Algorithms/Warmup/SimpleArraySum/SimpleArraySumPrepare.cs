@@ -5,7 +5,7 @@ using System.Linq;
 namespace HackerRankProblems.Problem_Solving.Algorithms.Warmup.SimpleArraySum
 {
     /// <summary>
-    /// https://www.hackerrank.com/challenges/solve-me-first/problem
+    /// https://www.hackerrank.com/challenges/simple-array-sum/problem
     /// </summary>
     public class SimpleArraySumPrepare
     {
