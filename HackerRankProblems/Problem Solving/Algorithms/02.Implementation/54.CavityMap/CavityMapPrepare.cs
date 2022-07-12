@@ -9,7 +9,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.CavityMap
     public class CavityMapPrepare
     {
         public static void Call()
-        {   
+        {
             int n = Convert.ToInt32(Console.ReadLine().Trim());
 
             List<string> grid = new List<string>();

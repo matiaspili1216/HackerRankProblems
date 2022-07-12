@@ -17,10 +17,10 @@ namespace HackerRankProblems.Others.PointsInTriangle
         /// <returns>true is extra point is into the triangle</returns>
         public bool PointBelongTriangle(Point a, Point b, Point c, Point p)
         {
-            bool b1 = Sign(a, b, p) < 0.0f; 
-            bool b2 = Sign(b, c, p) < 0.0f; 
-            bool b3 = Sign(c, a, p) < 0.0f; 
-            
+            bool b1 = Sign(a, b, p) < 0.0f;
+            bool b2 = Sign(b, c, p) < 0.0f;
+            bool b3 = Sign(c, a, p) < 0.0f;
+
             return (b1 == b2) && (b2 == b3);
         }
 

@@ -45,7 +45,7 @@
 
         public static string TimeInWords(int h, int m)
         {
-            if(m == 0) { return $"{NumberToText(h)} o' clock"; }
+            if (m == 0) { return $"{NumberToText(h)} o' clock"; }
 
             string pastTo = m <= 30 ? "past" : "to";
             int mm = m <= 30 ? m : 60 - m;

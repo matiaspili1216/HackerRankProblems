@@ -15,9 +15,9 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.MinimumDi
 
         public static int MinimumDistances(List<int> a)
         {
-            
-            if(a == null || !a.Any()) { return -1; }
-            else if(a.Count == a.Distinct().Count()) { return -1; }
+
+            if (a == null || !a.Any()) { return -1; }
+            else if (a.Count == a.Distinct().Count()) { return -1; }
             else
             {
                 List<int> results = new List<int>();
@@ -27,7 +27,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.MinimumDi
                 {
                     int el = a.ElementAt(i);
 
-                    if(a.Count(x => x == el) > 1)
+                    if (a.Count(x => x == el) > 1)
                     {
                         var indexs = GetAllIndexOf(a, el).OrderBy(x => x);
 

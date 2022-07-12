@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
-using System.Numerics;
 
 namespace HackerRankProblems.Others.PointsInTriangle
 {
@@ -14,7 +13,7 @@ namespace HackerRankProblems.Others.PointsInTriangle
         public void Call()
         {
             Console.WriteLine("Enter value X and Y of Points (without spaces and separate by commas): three point of triangle and one to calculate");
-            
+
             Console.WriteLine("Point A of triangle:");
             string valuesOfA = Console.ReadLine();
             var pointOfA = valuesOfA.Split(',').Select(x => int.Parse(x));
@@ -40,7 +39,7 @@ namespace HackerRankProblems.Others.PointsInTriangle
                 string valuesOfP = Console.ReadLine();
                 var pointOfP = valuesOfP.Split(',').Select(x => int.Parse(x));
                 Point p = new Point(pointOfP.ElementAt(0), pointOfP.ElementAt(1));
-            
+
                 if (solve.PointBelongTriangle(a, b, c, p))
                 {
                     Console.WriteLine("This Point belong of triangle");

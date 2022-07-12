@@ -16,7 +16,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Warmup.DiagonalDifferenc
             int yD1 = 0;
 
             int xD2 = 0;
-            int yD2 = max -1;
+            int yD2 = max - 1;
 
             int sumD1 = 0;
             int sumD2 = 0;
@@ -27,7 +27,8 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Warmup.DiagonalDifferenc
 
                 for (int y = 0; y < max; y++)
                 {
-                    if(x == xD1 && y == yD1) { 
+                    if (x == xD1 && y == yD1)
+                    {
                         sumD1 += row.ElementAt(y);
                         xD1++;
                         yD1++;

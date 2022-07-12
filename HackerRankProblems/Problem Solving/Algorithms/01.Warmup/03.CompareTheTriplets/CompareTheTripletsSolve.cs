@@ -15,10 +15,11 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Warmup.CompareTheTriplet
 
             for (int i = 0; i < a.Count; i++)
             {
-                if(a.ElementAt(i) > b.ElementAt(i)){
+                if (a.ElementAt(i) > b.ElementAt(i))
+                {
                     pa++;
                 }
-                else if(a.ElementAt(i) < b.ElementAt(i))
+                else if (a.ElementAt(i) < b.ElementAt(i))
                 {
                     pb++;
                 }

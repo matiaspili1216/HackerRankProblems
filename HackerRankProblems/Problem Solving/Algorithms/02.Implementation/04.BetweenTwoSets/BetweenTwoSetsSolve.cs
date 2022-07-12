@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.BetweenTwoSets
@@ -17,7 +16,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.BetweenTw
 
             foreach (var f in comunFac)
             {
-                if(a.All(x => f % x == 0)) { result++; }
+                if (a.All(x => f % x == 0)) { result++; }
             }
 
             return result;
@@ -50,7 +49,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.BetweenTw
 
             for (int i = 1; i <= value / 2; i++)
             {
-                if(value % i == 0) { result.Add(i); }
+                if (value % i == 0) { result.Add(i); }
             }
 
             return result;
