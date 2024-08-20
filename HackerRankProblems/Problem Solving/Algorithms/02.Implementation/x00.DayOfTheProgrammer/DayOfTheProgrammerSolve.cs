@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.DayOfTheProgrammer
 {

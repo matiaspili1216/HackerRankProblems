@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
 namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.DrawingBook
 {

@@ -8,15 +8,6 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.Electroni
     /// </summary>
     public class ElectronicsShopSolve
     {
-        /*
-         * Complete the 'bonAppetit' function below.
-         *
-         * The function accepts following parameters:
-         *  1. INTEGER_ARRAY bill
-         *  2. INTEGER k
-         *  3. INTEGER b
-         */
-
         public static int Solve(int[] keyboards, int[] drives, int b)
         {
             List<int> sums = new List<int>();
