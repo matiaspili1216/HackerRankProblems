@@ -1,7 +1,4 @@
-﻿using HackerRankProblems.Problem_Solving.Algorithms.Implementation.ElectronicsShop;
-
-using System;
-using System.IO;
+﻿using System;
 
 namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.CatsAndAMouse
 {
@@ -24,7 +21,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.CatsAndAM
 
                 int z = Convert.ToInt32(xyz[2]);
 
-                string result = ElectronicsShopSolve.Solve(x, y, z);
+                string result = CatsAndAMouseSolve.Solve(x, y, z);
 
                 Console.WriteLine(result);
             }
