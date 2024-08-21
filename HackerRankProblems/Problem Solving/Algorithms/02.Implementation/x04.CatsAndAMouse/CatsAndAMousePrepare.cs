@@ -24,9 +24,7 @@ namespace HackerRankProblems.Problem_Solving.Algorithms.Implementation.CatsAndAM
                 string result = CatsAndAMouseSolve.Solve(x, y, z);
 
                 Console.WriteLine(result);
-            }
-
-            
+            }            
         }
     }
 }
