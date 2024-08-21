@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            HackerRankProblems.Problem_Solving.Algorithms.Implementation.MagicSquareForming.MagicSquareFormingPrepare.Call();
+            HackerRankProblems.Problem_Solving.Algorithms.Implementation.PickingNumbers.PickingNumbersPrepare.Call();
         }
     }
 }
