@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            HackerRankProblems.Problem_Solving.Algorithms.Implementation.AngryProfessor.AngryProfessorPrepare.Call();
+            HackerRankProblems.Problem_Solving.Algorithms.Implementation.ExtraLongFactorials.ExtraLongFactorialsPrepare.Call();
         
         }
     }
