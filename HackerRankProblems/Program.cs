@@ -6,7 +6,7 @@ namespace HackerRankProblems
     {
         static void Main(string[] args)
         {
-            HackerRankProblems.Problem_Solving.Algorithms.Implementation.PickingNumbers.PickingNumbersPrepare.Call();
+            HackerRankProblems.Problem_Solving.Algorithms.Implementation.ClimbingTheLeaderboard.ClimbingTheLeaderboardPrepare.Call();
         }
     }
 }
